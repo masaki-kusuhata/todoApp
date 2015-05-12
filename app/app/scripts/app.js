@@ -27,4 +27,14 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       });
+  })
+  .factory('CONSTANT', function () {
+    return {
+      // 優先度
+      PRIORITY: {
+        HIGH: 2,
+        MEDIUM: 1,
+        LOW: 0
+      }
+    };
   });
